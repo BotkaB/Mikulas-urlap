@@ -1,0 +1,103 @@
+
+html{
+    background-image: url(image/hatter.jpg);
+    
+    width:auto;
+}
+
+h1{ 
+    font-size:20px;
+    font-family:serif;
+    text-transform: uppercase;
+    color: rgb(223, 7, 7);
+
+}
+h2{
+    font-size:15px;
+    font-family:serif;
+   
+}
+
+header,nav,aside,article, footer{
+    border:2px white;
+    padding:0 px;
+}
+*{
+    box-sizing:border-box
+}
+main{
+    width:60%;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "h h h h h  "
+    "n n n n n"
+    "ar ar ar as as "
+    " f f f f f "
+    ;
+  
+}
+header{ 
+    grid-area:h;
+    text-align: center;
+    background-image:url("image/mikulas.jpg");
+    background-size: cover;
+    min-height: 550px;
+   
+    
+    
+    
+}
+nav{ 
+    grid-area:n;
+   
+    background-color: rgb(223, 7, 7);
+
+}
+aside{ 
+    grid-area:as;
+    background-color: rgb(245, 239, 239);
+}
+article{ 
+    grid-area:ar;
+    background-color: rgb(245, 239, 239);
+}
+footer{ 
+    grid-area:f;
+    text-align: center;
+    background-color: rgb(223, 7, 7);
+    color: white;
+    
+}
+
+nav li{
+    list-style-type: none;
+  
+}
+nav ul{
+    padding-left: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    
+}
+nav a{
+    text-decoration:none ;
+    background-color: red;
+    text-align:center;
+    display:block;   
+    color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width:2px;
+    
+    
+}
+nav a:hover{
+    background-color:red;
+    color: black;
+    
+
+}

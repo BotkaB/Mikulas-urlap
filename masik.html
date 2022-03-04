@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mikulás, házhoz megy, ">
+    <meta name="author" content="BB">
+   
+    <title>Botka Bianka</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+    <main>
+        <header>
+           
+            
+            <h1>MIKULÁS HÁZHOZ MEGY!</h1>
+           
+          
+        
+        
+        
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">A Mikulasról</a></li>
+                <li><a href="masik.html">Megrendelő</a></li>
+                <li><a href="külsö.html">Külső link</a></li>
+            </ul>
+    
+        </nav>
+        <aside>
+          
+    
+        </aside>
+        <article>
+            <h2>Válaszd ki melyik szolgáltatást kéred:</h2>
+            <form action="parser.php" method="post">
+                <div>
+                    <fieldset>
+                    <legend>Amit a mikulásnak tudnia kell</legend>
+                    <label for="megrendelő">Megrendelő neve: </label><br>
+                    <input type="text" name="megrendelő" id="megrendelő">
+                    <br>
+                    <br>
+                    <label for="cég">Cég neve: </label><br>
+                    <input type="text" name="cég" id="cég">
+                    <br>
+                    <br>
+                    <label for="email">E-mail cím: </label><br>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <br>
+                    <label for="számla">Számlázási név, cím:</label><br>
+                    <textarea name="Számla" id="számla" rows="10"cols="65">...</textarea>
+                    <br>
+                    <br>
+                    <label for="cím">Látogatási cím:</label><br>
+                    <textarea name="cím" id="cím" rows="10"cols="65">...</textarea>
+                    <br>
+                    <br>
+                    <label for="létszám">Létszám: </label><br>
+                    <input type="text" name="létszám" id="létszám">
+                    <br>
+                    <br>
+                    <label for="tudnivaló">Fontosabb tudnivalók</label><br>
+                    <textarea name="tudnivaló" id="tudnivaló" rows="10"cols="65">...</textarea>
+                    <br>
+                    <br>
+                    <label for="megjegyzés">Kérés, bármilyen megjegyzés</label><br>
+                    <textarea name="megjegyzés" id="megjegyzés" rows="10"cols="65">...</textarea>
+                    <br>
+                    <br>
+                    <label for="időpont">Időpont </label>
+                    <input type="text" name="időpont" id="időpont">
+                    <br>
+                    <br>
+                    <label for="óra">Óra</label>
+                    <br>
+                    <select name="orák" id="orák" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    </select>
+                    <select name="perc" id="perc" >
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                    </select>    
+                    <select name="AM/PM" id="AM/PM" >
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                    </select>
+                    <br>
+                    <a>HH MM AM/PM</a>
+                    <br>
+                    <br>
+                    <legend>Elfogadás</legend>
+                    <a>A felhasználási feltételeket, az adatvédelmi szabályokat megismertem, és elfogadom.</a><br>
+                    <input type="checkbox" id="elfogadás" name="elfogadás" value="elfogadás">
+                    <label for="elfogadás">Elfogadom</label>
+                    <br>
+                    <br>
+                    <legend>Melyik szolgáltatást választod?</legend>
+                    <input type="checkbox" id="Céges Mikulás" name="Céges Mikulás" value="Céges Mikulás">
+                    <label for="Céges Mikulás">Céges Mikulás</label><br>
+                    <input type="checkbox" id="Dolgozó Mikluás" name="Dolgozó Mikluás" value="Dolgozó Mikluás">
+                    <label for="Dolgozó Mikluás">Dolgozó Mikluás</label><br>
+                    <input type="checkbox" id="Futár Mikulás" name="Futár Mikulás" value="Futár Mikulás">
+                    <label for="Futár Mikulás">Futár Mikulás</label><br>
+                    <input type="checkbox" id="Céges Mikulás" name="Céges Mikulás" value="Céges Mikulás">
+                    <label for="Futár Mikulás">Futár Mikulás</label><br>
+                    <input type="checkbox" id="Reklám Mikluás" name="Reklám Mikluás" value="Reklám Mikluás">
+                    <label for="Reklám Mikluás">Reklám Mikluás</label><br>
+                    <input type="checkbox" id="kézműves" name="kézműves" value="kézműves">
+                    <label for="kézműves">Kérem a kézműves foglalkozást is!</label><br>
+                    <input type="checkbox" id="csomagolás" name="csomagolás" value="csomagolás">
+                    <label for="csomagolás">Csomagolást is kérünk!</label><br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Beküldés">
+                </fieldset>
+    
+                </div>
+                
+        </article>
+        <footer><p>© Minden jog fenntartva.</p>
+        </footer>
+        
+    
+    
+    </main>
+    </body>
+    
+    </html>
