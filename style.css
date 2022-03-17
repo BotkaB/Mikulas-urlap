@@ -101,3 +101,40 @@ nav a:hover{
     
 
 }
+@media screen and (max-width: 800px){
+	main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas:
+        "h h h"
+        "n n n"
+        "ar ar ar"
+        " f f f";
+    }
+    
+    header{
+       
+        height: 300px;
+   
+    }
+    
+    }   
+
+@media screen and (max-width: 400px){
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "h h " 
+            "n n " 
+            "ar ar "
+            "f f ";
+        }
+       
+      header{
+         
+          height:145px;
+        
+      }
+      
+        }
