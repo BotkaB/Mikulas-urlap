@@ -66,6 +66,7 @@ article{
     display:grid;
     background-color: rgb(245, 239, 239);
     overflow: auto;
+    
 }
 footer{ 
     grid-area:f;
@@ -123,7 +124,7 @@ nav a:hover{
 
 @media screen and (max-width: 400px){
     main {
-          
+            width:80%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
