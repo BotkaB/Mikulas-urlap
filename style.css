@@ -51,6 +51,7 @@ header{
 
 nav{ 
     grid-area:n;
+    display: grid;
    
     background-color: rgb(223, 7, 7);
 
@@ -120,7 +121,7 @@ nav a:hover{
 
 @media screen and (max-width: 400px){
     main {
-            width:100%;
+          
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
