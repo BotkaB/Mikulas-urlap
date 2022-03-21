@@ -58,10 +58,12 @@ nav{
 }
 aside{ 
     grid-area:as;
+    display:grid;
     background-color: rgb(245, 239, 239);
 }
 article{ 
     grid-area:ar;
+    display:grid;
     background-color: rgb(245, 239, 239);
     overflow: auto;
 }
