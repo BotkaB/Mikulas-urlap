@@ -118,8 +118,11 @@ nav a:hover{
     }
     header{
        
-        max-height: 300px;
+        max-height: 280px;
    
+    }
+    h1{ 
+        font-size:15px;
     }
 }   
 
@@ -136,8 +139,11 @@ nav a:hover{
     }
     header{
        
-        max-height: 200px;
+        max-height: 180px;
    
+    }
+    h1{ 
+        font-size:11px;
     }
     
 }
